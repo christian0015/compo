@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card J1</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>CardJ1 J1</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         * {
             margin: 0;
@@ -27,16 +28,16 @@
             overflow-x: hidden;
         }
 
-        .card {
+        .cardJ1 {
             background-color: rgb(235, 234, 234);
-            width: 50%;
-            padding: 20px;
-            border-radius: 25px;
+            width: 250px;
+            padding: 15px;
+            border-radius: 18px;
             margin: 100px 10px 10px 10px;
             box-shadow: 10px 10px 12px rgb(245, 245, 245), -10px -10px 10px rgb(131, 131, 131);
         }
 
-        .imageCardContainer {
+        .imageCardJ1Container {
             position: relative;
             /* width: 100%; */
             display: flex;
@@ -44,90 +45,164 @@
             padding: 0 0 20px;
         }
 
-        .imageCard {
+        .imageCardJ1 {
             width: 100%;
-            height: 240px;
+            height: 150px;
             object-fit: cover;
-            border-radius: 30px;
-            padding: 10px;
+            border-radius: 15px;
+            padding: 5px;
         }
 
-        .infoCard {
+        .infoCardJ1 {
             display: flex;
             justify-content: space-between;
             gap: 50px;
         }
 
-        h3 {
-            color: rgb(196, 124, 30);
 
-        }
 
-        .descriptionCard {
+        .descriptionCardJ1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
+            margin-top: 10px;
         }
 
-        .prixCard {
-            font-weight: 300;
-            font-size: 20px;
+        .descriptionCardJ1 h3 {
+            color: rgb(196, 124, 30);
+            font-size: 35px;
+            font-weight: 550;
+            text-align: center;
+            padding: 35px 2px 8px 2px;
+
         }
 
-        .ajoutPanierCard {
-            /* background-color: rgb(172, 154, 172); */
-            background-color: rgb(170, 110, 32);
-            color: rgb(255, 255, 255);
-            width: 150px;
+        .descriptionCardJ1 p {
+            color: rgb(49, 49, 49);
             font-size: 15px;
-            font-weight: 800;
-            padding: 5px ;
-            margin: 10px 5px 20px;
-            border: none;
-            border-radius: 8px;
-            display: flex; justify-content: center; align-items: center; gap: 15px;
+            text-align: center;
+            line-height: 30px;
         }
 
-        @media only screen and (max-width:780px) {
-            .card {
-            background-color: rgb(235, 234, 234);
-            width: 70%;
-            padding: 15px 15px 25px;
-            border-radius: 25px;
+
+        .cardJ2 {
+            background-color: rgb(248, 248, 248);
+            width: 300px;
+            border-radius: 8px;
             margin: 100px 10px 10px 10px;
-            box-shadow: 10px 10px 12px rgb(245, 245, 245), -10px -10px 10px rgb(131, 131, 131);
+            box-shadow: 10px 10px 12px rgb(141, 141, 141), -10px -10px 10px rgb(131, 131, 131);
         }
-            .imageCard {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-                border-radius: 30px;
-                padding: 10px;
-            }
+        .switchJ2{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px 10px;
+            background-color: blueviolet;
+            color: white;
         }
+
+        .imageCardJ2Container {
+            position: relative;
+            /* width: 100%; */
+            display: flex;
+            justify-content: center;
+            padding: 0 0 20px;
+        }
+
+        .imageCardJ2 {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            /* border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px; */
+        }
+
+        .infoCardJ2 {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+
+
+        .descriptionCardJ2 {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            padding: 10px;
+        }
+
+        .descriptionCardJ2 p {
+            color: rgb(37, 8, 61);
+            font-size: 12px;
+            text-align: start;
+            padding: 0 0 5px;
+        }
+        .descriptionCardJ2 hr {
+            color: rgb(49, 49, 49);
+            color: rgb(156, 156, 156);
+            background-color: aliceblue;
+            margin: 10px 0 10px ;
+        }
+
+
+
+
+        @media only screen and (max-width:780px) {}
     </style>
 </head>
 
 <body>
     <div class="center">
-        <div class="card">
+        <div class="cardJ1">
 
-            <div class="imageCardContainer">
-                <img src="Asset/patisserie_florentine_croissants.jpeg" alt="" class="imageCard">
+            <div class="imageCardJ1Container">
+                <img src="Asset/UI-UX-img.png" alt="" class="imageCardJ1">
             </div>
 
-            <div class="infoCard">
-                <div class="descriptionCard">
-                    <h3>Pain Croissant</h3>
-                    <p class="prixCard">Prix: <strong>0.89€</strong></p>
-                    <button type="submit" class="ajoutPanierCard"><span class="material-symbols-outlined">
-                        shopping_cart_checkout
-                        </span>Ajouter</button>
-                    <p>Pattiserie <strong>La Casablancaise</strong>, pain avec sucre, sel et chocolat.</p>
-                    <!-- <button type="submit" class="ajoutPanierCard">Ajouter au panier</button> -->
+            <div class="infoCardJ1">
+                <div class="descriptionCardJ1">
+                    <h3>STEP #1</h3>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias dolor.</p>
+
+                    <!-- <button type="submit" class="ajoutPanierCardJ1">Ajouter au panier</button> -->
                 </div>
             </div>
 
         </div>
     </div>
+
+    <div class="center">
+        <div class="cardJ2">
+            <div class="switchJ2">
+                <span>Sports</span> <span>></span>
+            </div>
+
+            <div class="imageCardJ2Container">
+                <img src="Asset/sport.jpeg" alt="" class="imageCardJ2">
+            </div>
+
+            <div class="infoCardJ2">
+                <div class="descriptionCardJ2">
+
+                    <p>Lorem ipsum dolor sit, consectetur.</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit, consectetur.</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit, consectetur.</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit, consectetur.</p>
+                    
+                    <br>
+                    <!-- <button type="submit" class="ajoutPanierCardJ2">Ajouter au panier</button> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br><br>
 </body>
 
 </html>
